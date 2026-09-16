@@ -14,18 +14,6 @@ TODO:
 - Add demonstration code under `if __name__ == "__main__":`
 """
 
-def get_numbers():
-    numbers = []
-    while True:
-        user_input = input("Enter a number (or 'q' to finish): ")
-        if user_input.lower() == "q":
-            break
-        try:
-            number = float(user_input)
-            numbers.append(number)
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
-    return numbers
 
 
 def main():
