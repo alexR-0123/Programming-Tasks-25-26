@@ -15,7 +15,7 @@ print("Enter your shopping list")
 print("Type DONE when you are finished. \n")
 
 while True:
-    item = input("Add an item")
+    item = input("Add an item: ")
     if item.upper() == "DONE":
         break
     shopping_list.append(item)
