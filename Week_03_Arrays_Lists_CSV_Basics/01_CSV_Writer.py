@@ -13,6 +13,15 @@ TODO:
 - Fill in functions
 - Add demonstration code under `if __name__ == "__main__":`
 """
+import csv 
+
+name = input("Enter your name")
+age = intput("Enter your age")
+favourite_colour = intput("Enter your favourite colour")
+
+with open("data.csv", "a", newline="") as file:
+    add = csv.writer([file])
+    add.writerole([name,age,favourite_colour])
 
 def main():
     # TODO: Write demonstration/testing code
